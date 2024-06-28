@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travellian - Start your jurney with us</title>
+    <script
+      src="https://kit.fontawesome.com/ca9945fa9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js
+"></script>
+    <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="relative-div">
+      <div class="container header">
+        <img id="logo-header" src="./img/Logo+text.svg" alt="Travellian Logo" />
+        <ul id="navbar">
+          <li id="nav"><a href="home">Home</a></li>
+          <li id="nav"><a href="explore">Explore</a></li>
+          <li id="nav"><a href="travel">Travel</a></li>
+          <li id="nav"><a href="blog">Blog</a></li>
+          <li id="nav"><a href="pricing">Pricing</a></li>
+        </ul>
+        <div>
+          <button class="btn">Login</button>
+          <button class="btn btn-orange">Sign up</button>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-bar-mobile">
+          <li id="nav-mobile">Login</li>
+          <li id="nav-mobile">Sign Up</li>
+          <li id="nav-mobile"><a href="home">Home</a></li>
+          <li id="nav-mobile"><a href="explore">Explore</a></li>
+          <li id="nav-mobile"><a href="travel">Travel</a></li>
+          <li id="nav-mobile"><a href="blog">Blog</a></li>
+          <li id="nav-mobile"><a href="pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div id="hero-places-showcase" class="splide" aria-label="Places">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="./img/place1.jpg" alt="Landscape" />
+            </li>
+            <li class="splide__slide">
+              <img src="./img/place2.jpg" alt="Landscape" />
+            </li>
+            <li class="splide__slide">
+              <img src="./img/place3.jpg" alt="Landscape" />
+            </li>
+            <li class="splide__slide">
+              <img src="./img/place4.jpg" alt="Landscape" />
+            </li>
+            <li class="splide__slide">
+              <img src="./img/place5.jpg" alt="Landscape" />
+            </li>
+            <li class="splide__slide">
+              <img src="./img/place6.jpg" alt="Landscape" />
+            </li>
+          </ul>
+        </div>
+        <div class="splide__progress">
+          <div class="splide__progress__bar"></div>
+        </div>
+      </div>
+
+      <div class="container hero">
+        <h1>Start your unforgettable journey with us.</h1>
+        <p>The best travel for you journey begins now.</p>
+      </div>
+      <div id="s1-p">
+        <div id="s1-w">
+          <div id="s1-wrapper">
+            <div>
+              <label for="destination">DESTINATION</label>
+              <input type="text" placeholder="Choose your next adventure!" />
+            </div>
+            <div>
+              <label for="n-people">PEOPLE</label>
+              <select name="n-people" id="n-people">
+                <option disabled hidden selected value="">
+                  Number of people
+                </option>
+                <option value="1">1-2</option>
+                <option value="3">3-5</option>
+                <option value="6">6+</option>
+              </select>
+            </div>
+            <div>
+              <label for="checkin">CHECK IN</label>
+              <input type="date" name="checkin" id="checkin" />
+            </div>
+            <div>
+              <label for="checkout">CHECK OUT</label>
+              <input type="date" name="checkout" id="checkout" />
+            </div>
+            <div id="s1-mb">
+              <input type="button" value="Book Now" />
+            </div>
+          </div>
+        </div>
+        <div id="s1-b">Book Now</div>
+      </div>
+    </header>
+    <section class="section s2 container">
+      <div id="s2-t">
+        <div>
+          <h2><span class="underline-style">Popular Dest</span>inations</h2>
+          <p>
+            Most popular destinations around the world, from historical places
+            to natural wonders.
+          </p>
+        </div>
+      </div>
+      <div id="landmark-showcase" class="splide" aria-label="landmark-showcase">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="relative-div">
+                <img class="landmark-img" src="./img/castle.jpg" alt="" />
+                <div class="landmark-text">
+                  <h3>Neuschwanstein Castle</h3>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> Schwangau, Germany
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="relative-div">
+                <img class="landmark-img" src="./img/bigben.jpg" alt="" />
+                <div class="landmark-text">
+                  <h3>Big Ben</h3>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> London, United
+                    Kingdom
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="relative-div">
+                <img
+                  class="landmark-img"
+                  src="./img/statueofliberty.jpg"
+                  alt=""
+                />
+                <div class="landmark-text">
+                  <h3>Statue of Liberty</h3>
+                  <p><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="relative-div">
+                <img class="landmark-img" src="./img/tajmahal.jpg" alt="" />
+                <div class="landmark-text">
+                  <h3>Taj Mahal</h3>
+                  <p><i class="fa-solid fa-location-dot"></i> Agra, India</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="relative-div">
+                <img class="landmark-img" src="./img/torontotower.jpg" alt="" />
+                <div class="landmark-text">
+                  <h3>CN Tower</h3>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> Ontario, Canada
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="relative-div">
+                <img class="landmark-img" src="./img/italy.jpg" alt="" />
+                <div class="landmark-text">
+                  <h3>Manarola</h3>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> Manarola, Italy
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section container">
+      <div id="s3-t">
+        <div>
+          <h2>Spec<span class="underline-style">ial Offer</span></h2>
+          <p>Check out our special offers and discounts</p>
+        </div>
+      </div>
+      <div id="special-offers" class="splide" aria-label="Special Offers">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img src="./img/Ksamil-Albania.jpg" alt="Ksamil Beach" />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Ksamil, Albania</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$300</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img
+                    src="./img/Cabo Da Roca-Portugal.jpg"
+                    alt="Cabo Da Roca"
+                  />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Cabo Da Roca, Portugal</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$500</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img src="./img/Santorini Greece.jpg" alt="Santorini" />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Santorini, Greece</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$900</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img src="./img/Komani Lake-Albania.jpg" alt="Komani Lake" />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Komani Lake, Albania</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$1500</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img
+                    src="./img/Neuschwanstein Castle.jpg"
+                    alt="Neuschwanstein"
+                  />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Neuschwanstein, Germany</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$700</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img src="./img/Venezia- Italy.jpg" alt="Venezia" />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Venezia, Italy</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$499</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img src="./img/Sinatra-Portugal.jpg" alt="Sinatra" />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Sinatra, Portugal</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$950</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="offer-wrapper">
+                <div class="offer-img">
+                  <img src="./img/Cinque Terre Italy.jpg" alt="Cinque Terre" />
+                </div>
+                <div class="offer-txt-wrapper">
+                  <div class="offer-txt">
+                    <h5>Cinque Terre, Italy</h5>
+                    <i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i
+                    ><i
+                      class="fa-solid fa-star fa-2xs"
+                      style="color: #ffd43b"
+                    ></i>
+                    <p>
+                      5 nights and 4 days in 5 star hotel, breakfast and lunch
+                      included. Very popular during the renaissance. Passage and
+                      going through the cites of the world in classical
+                      literature.
+                    </p>
+                    <div>
+                      <p>From <span>$799</span></p>
+                      <button class="btn btn-orange">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section container">
+      <div class="s4-t">
+        <h2><span class="underline-style">Our B</span>log</h2>
+        <p>An insight the incredible experience in the world</p>
+      </div>
+      <div class="s4-b">
+        <div id="s4-i"></div>
+        <div id="s4-b-t">
+          <h3>Cabo Da Roca</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            consequatur voluptas rerum aspernatur unde aliquid non id aliquam
+            optio itaque ab tempore sint recusandae quam cumque mollitia debitis
+            et, autem repellendus neque? Vel iusto laudantium expedita eveniet
+            nostrum dolor! Odit, tempore fugiat corporis eos nesciunt molestias
+            tenetur iure necessitatibus delectus earum expedita repellat quos
+            possimus, quo ad esse ab distinctio pariatur enim est sit
+            dignissimos voluptate totam. Dolorum nam officiis perspiciatis
+            labore asperiores quo eveniet, deserunt libero magnam nulla esse,
+            impedit est, magni eius! Nesciunt et sit facere eum ex! Magnam neque
+            dolor nihil! Adipisci at deleniti aut enim rem?
+          </p>
+          <button class="btn read-more">
+            Read More &nbsp; &nbsp;<i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div id="s5-wrapper">
+        <div class="s5-t">
+          <h2><span class="underline-style">Trip Pla</span>nners</h2>
+          <p>
+            20 years from now you will be more disappointed by the things that
+            you didn’t do. Stop regretting and start travelling. Start throwing
+            off the bowlines.
+          </p>
+          <button class="btn btn-orange">View All Trip Tours</button>
+        </div>
+        <div id="trip-planners" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="trip-wrapper">
+                  <div class="relative-div">
+                    <img
+                      class="trip-image"
+                      src="./img/Cochem Germany.jpg"
+                      alt=""
+                    />
+                    <div class="trip-info">
+                      <div>
+                        <p>Guided Tour</p>
+                        <p>$99/Day</p>
+                      </div>
+                      <h4>Cochem Germany Tour</h4>
+                      <div class="trip-rating">
+                        <div>
+                          <i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i>
+                        </div>
+                        <p>7 Day Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="trip-wrapper">
+                  <div class="relative-div">
+                    <img
+                      class="trip-image"
+                      src="./img/Wengen Switzerland.jpg"
+                      alt="Wengen Switzerland"
+                    />
+                    <div class="trip-info">
+                      <div>
+                        <p>Guided Tour</p>
+                        <p>$200/Day</p>
+                      </div>
+                      <h4>Alps Hiking Tour</h4>
+                      <div class="trip-rating">
+                        <div>
+                          <i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i>
+                        </div>
+                        <p>12 Day Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="trip-wrapper">
+                  <div class="relative-div">
+                    <img
+                      class="trip-image"
+                      src="./img/Taj Mahal India.jpg"
+                      alt="Taj Mahal India"
+                    />
+                    <div class="trip-info">
+                      <div>
+                        <p>Guided Tour</p>
+                        <p>$79/Day</p>
+                      </div>
+                      <h4>Tah Mahal/Agra Tour</h4>
+                      <div class="trip-rating">
+                        <div>
+                          <i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i>
+                        </div>
+                        <p>5 Day Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="trip-wrapper">
+                  <div class="relative-div">
+                    <img
+                      class="trip-image"
+                      src="./img/Grand Canyon USA.jpg"
+                      alt="Grand Canyon USA"
+                    />
+                    <div class="trip-info">
+                      <div>
+                        <p>Guided Tour</p>
+                        <p>$159/Day</p>
+                      </div>
+                      <h4>Grand Canyon Tour</h4>
+                      <div class="trip-rating">
+                        <div>
+                          <i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i>
+                        </div>
+                        <p>10 Day Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="trip-wrapper">
+                  <div class="relative-div">
+                    <img
+                      class="trip-image"
+                      src="./img/Varenna Italy.jpg"
+                      alt="Varenna Italy"
+                    />
+                    <div class="trip-info">
+                      <div>
+                        <p>Guided Tour</p>
+                        <p>$159/Day</p>
+                      </div>
+                      <h4>Varenna Tour</h4>
+                      <div class="trip-rating">
+                        <div>
+                          <i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i>
+                        </div>
+                        <p>5 Day Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="trip-wrapper">
+                  <div class="relative-div">
+                    <img
+                      class="trip-image"
+                      src="./img/South Tyrol Italy.jpg"
+                      alt="South Tyrol Italy"
+                    />
+                    <div class="trip-info">
+                      <div>
+                        <p>Guided Tour</p>
+                        <p>$89/Day</p>
+                      </div>
+                      <h4>South Tyrol Tour</h4>
+                      <div class="trip-rating">
+                        <div>
+                          <i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i>
+                        </div>
+                        <p>7 Day Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="trip-wrapper">
+                  <div class="relative-div">
+                    <img
+                      class="trip-image"
+                      src="./img/Karkow, Poland.jpg"
+                      alt="Karkow"
+                    />
+                    <div class="trip-info">
+                      <div>
+                        <p>Guided Tour</p>
+                        <p>$59/Day</p>
+                      </div>
+                      <h4>Karkow Tour</h4>
+                      <div class="trip-rating">
+                        <div>
+                          <i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i
+                          ><i
+                            class="fa-solid fa-star fa-2xs"
+                            style="color: #ffd43b"
+                          ></i>
+                        </div>
+                        <p>3 Day Tour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container">
+      <div class="s6-t">
+        <h2><span class="underline-style">Destinatio</span>n Gallery</h2>
+        <p>Our Clients Photo Gallery</p>
+        <div id="gallery" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="./img/person1.jpg" alt="" />
+                <p>Mo<span class="gallery-underline">unt Everest </span>Trip</p>
+              </li>
+              <li class="splide__slide">
+                <img src="./img/person2.jpg" alt="" />
+                <p><span class="gallery-underline">Paris T</span>rip</p>
+              </li>
+              <li class="splide__slide">
+                <img src="./img/person3.jpg" alt="" />
+                <p>Oce<span class="gallery-underline">an City </span>Visit</p>
+              </li>
+              <li class="splide__slide">
+                <img src="./img/person4.jpg" alt="" />
+                <p><span class="gallery-underline">Taj Mahal </span>Viewing</p>
+              </li>
+              <li class="splide__slide">
+                <img src="./img/person5.jpg" alt="" />
+                <p>Ma<span class="gallery-underline">sada Hi</span>king</p>
+              </li>
+              <li class="splide__slide">
+                <img src="./img/person6.jpg" alt="" />
+                <p>Bel<span class="gallery-underline">gium T</span>our</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container">
+      <div class="s7-t">
+        <h2><span class="underline-style">Client Re</span>views</h2>
+        <p>Here's some feedback from our clients</p>
+      </div>
+      <div id="client-reviews" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="review-wrapper relative-div">
+                <img class="review-img" src="./img/review1.jpg" alt="" />
+                <div class="review-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore unde fugit laudantium quaerat, sequi dolorem ea,
+                    corrupti corporis provident necessitatibus dignissimos
+                    cupiditate assumenda odio? Placeat tenetur tempora quisquam
+                    quaerat repudiandae saepe nobis error rem doloremque
+                    aperiam! Fugiat doloribus excepturi magni. Id voluptatibus
+                    laborum perferendis magni minima, blanditiis ad veniam
+                    eveniet!
+                  </p>
+                  <img src="./img/stars.svg" alt="" />
+                </div>
+                <div class="review-author">
+                  <h3>Dona Smith</h3>
+                  <p>Journalist, RTK News</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="review-wrapper relative-div">
+                <img class="review-img" src="./img/review2.jpg" alt="" />
+                <div class="review-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore unde fugit laudantium quaerat, sequi dolorem ea,
+                    corrupti corporis provident necessitatibus dignissimos
+                    cupiditate assumenda odio? Placeat tenetur tempora quisquam
+                    quaerat repudiandae saepe nobis error rem doloremque
+                    aperiam! Fugiat doloribus excepturi magni. Id voluptatibus
+                    laborum perferendis magni minima, blanditiis ad veniam
+                    eveniet!
+                  </p>
+                  <img src="./img/stars.svg" alt="" />
+                </div>
+                <div class="review-author">
+                  <h3>Jamie Dohn</h3>
+                  <p>CEO, HTK L.L.C.</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="review-wrapper relative-div">
+                <img class="review-img" src="./img/review3.jpg" alt="" />
+                <div class="review-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore unde fugit laudantium quaerat, sequi dolorem ea,
+                    corrupti corporis provident necessitatibus dignissimos
+                    cupiditate assumenda odio? Placeat tenetur tempora quisquam
+                    quaerat repudiandae saepe nobis error rem doloremque
+                    aperiam! Fugiat doloribus excepturi magni. Id voluptatibus
+                    laborum perferendis magni minima, blanditiis ad veniam
+                    eveniet!
+                  </p>
+                  <img src="./img/stars.svg" alt="" />
+                </div>
+                <div class="review-author">
+                  <h3>Lamie Mi</h3>
+                  <p>Entrepreneur</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="review-wrapper relative-div">
+                <img class="review-img" src="./img/review4.jpg" alt="" />
+                <div class="review-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore unde fugit laudantium quaerat, sequi dolorem ea,
+                    corrupti corporis provident necessitatibus dignissimos
+                    cupiditate assumenda odio? Placeat tenetur tempora quisquam
+                    quaerat repudiandae saepe nobis error rem doloremque
+                    aperiam! Fugiat doloribus excepturi magni. Id voluptatibus
+                    laborum perferendis magni minima, blanditiis ad veniam
+                    eveniet!
+                  </p>
+                  <img src="./img/stars.svg" alt="" />
+                </div>
+                <div class="review-author">
+                  <h3>Fiona Smith</h3>
+                  <p>Head of HR, RTK News</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="review-wrapper relative-div">
+                <img class="review-img" src="./img/review5.jpg" alt="" />
+                <div class="review-text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore unde fugit laudantium quaerat, sequi dolorem ea,
+                    corrupti corporis provident necessitatibus dignissimos
+                    cupiditate assumenda odio? Placeat tenetur tempora quisquam
+                    quaerat repudiandae saepe nobis error rem doloremque
+                    aperiam! Fugiat doloribus excepturi magni. Id voluptatibus
+                    laborum perferendis magni minima, blanditiis ad veniam
+                    eveniet!
+                  </p>
+                  <img src="./img/stars.svg" alt="" />
+                </div>
+                <div class="review-author">
+                  <h3>Shaban Isufi</h3>
+                  <p>COO, Albania Production LLC</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section container relative-div">
+      <div class="newsletter-wrapper">
+        <h2>Our Newsletter</h2>
+        <div>
+          <div id="news-email">
+            <label for="e--mail">Email</label>
+            <input
+              type="email"
+              name="e--mail"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <button class="btn btn-orange" id="news-button">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <footer class="section footer">
+      <div class="footer-wrapper">
+        <div id="logo">
+          <img src="./img/Logo+text.svg" alt="" />
+          <p>Copyright © Travellian 2020 All rights reserved</p>
+        </div>
+        <div class="footer-links">
+          <p>Menu</p>
+          <ul>
+            <li>Home</li>
+            <li>Explore</li>
+            <li>Travel</li>
+            <li>Blog</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p>Information</p>
+          <ul>
+            <li>Destinations</li>
+            <li>Supports</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p>Contact Info</p>
+          <ul>
+            <li>+383 49 631 622</li>
+            <li>brilantkrasniqi26@gmail.com</li>
+            <li>Tophane, Prishtine, Kosova</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <p>Follow us on</p>
+          <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff"></i>
+          <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i>
+          <i class="fa-brands fa-x-twitter fa-xl"></i>
+          <i class="fa-brands fa-pinterest fa-xl" style="color: #ffffff"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+  </body>
+</html>
