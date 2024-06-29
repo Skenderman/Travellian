@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travellian - Start your jurney with us</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
     <script
       src="https://kit.fontawesome.com/ca9945fa9c.js"
       crossorigin="anonymous"
@@ -30,22 +47,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/js/splide-extension-intersection.min.js
 "></script>
     <script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="relative-div">
       <div class="container header">
         <img id="logo-header" src="./img/Logo+text.svg" alt="Travellian Logo" />
         <ul id="navbar">
-          <li id="nav"><a href="home">Home</a></li>
-          <li id="nav"><a href="explore">Explore</a></li>
-          <li id="nav"><a href="travel">Travel</a></li>
-          <li id="nav"><a href="blog">Blog</a></li>
-          <li id="nav"><a href="pricing">Pricing</a></li>
+          <li id="nav"><a href="index.html">Home</a></li>
+          <li id="nav"><a href="#explore">Explore</a></li>
+          <li id="nav"><a href="#travel">Travel</a></li>
+          <li id="nav"><a href="#blog">Blog</a></li>
+          <li id="nav"><a href="pricing.html">Pricing</a></li>
         </ul>
         <div>
-          <button class="btn">Login</button>
-          <button class="btn btn-orange">Sign up</button>
+          <button class="btn unchecked"><a href="login.html">Login</a></button>
+          <button class="btn btn-orange">
+            <a href="signup.html">Sign up</a>
+          </button>
         </div>
         <div class="hamburger">
           <span class="bar"></span>
@@ -53,13 +72,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/
           <span class="bar"></span>
         </div>
         <ul class="nav-bar-mobile">
-          <li id="nav-mobile">Login</li>
-          <li id="nav-mobile">Sign Up</li>
-          <li id="nav-mobile"><a href="home">Home</a></li>
-          <li id="nav-mobile"><a href="explore">Explore</a></li>
-          <li id="nav-mobile"><a href="travel">Travel</a></li>
-          <li id="nav-mobile"><a href="blog">Blog</a></li>
-          <li id="nav-mobile"><a href="pricing">Pricing</a></li>
+          <li id="nav-mobile"><a href="login.html">Login</a></li>
+          <li id="nav-mobile"><a href="signup.html">Sign up</a></li>
+          <li id="nav-mobile"><a href="index.html">Home</a></li>
+          <li id="nav-mobile"><a href="#explore">Explore</a></li>
+          <li id="nav-mobile"><a href="#travel">Travel</a></li>
+          <li id="nav-mobile"><a href="#blog">Blog</a></li>
+          <li id="nav-mobile"><a href="pricing.html">Pricing</a></li>
         </ul>
       </div>
       <div id="hero-places-showcase" class="splide" aria-label="Places">
@@ -128,7 +147,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/
         <div id="s1-b">Book Now</div>
       </div>
     </header>
-    <section class="section s2 container">
+    <section class="section s2 container" id="explore">
       <div id="s2-t">
         <div>
           <h2><span class="underline-style">Popular Dest</span>inations</h2>
@@ -212,10 +231,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/
         </div>
       </div>
     </section>
-    <section class="section container">
+    <section class="section container" id="travel">
       <div id="s3-t">
         <div>
-          <h2>Spec<span class="underline-style">ial Offer</span></h2>
+          <h2>Spec<span class="underline-style">ial Offers</span></h2>
           <p>Check out our special offers and discounts</p>
         </div>
       </div>
@@ -568,7 +587,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/
         </div>
       </div>
     </section>
-    <section class="section container">
+    <section class="section container" id="blog">
       <div class="s4-t">
         <h2><span class="underline-style">Our B</span>log</h2>
         <p>An insight the incredible experience in the world</p>
@@ -1100,11 +1119,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/
         <div class="footer-links">
           <p>Menu</p>
           <ul>
-            <li>Home</li>
-            <li>Explore</li>
-            <li>Travel</li>
-            <li>Blog</li>
-            <li>Pricing</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Explore</a></li>
+            <li><a href="index.html">Travel</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
           </ul>
         </div>
         <div class="footer-links">
@@ -1133,7 +1152,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-intersection@0.2.0/dist/
         </div>
       </div>
     </footer>
-    <script src="/scripts.js"></script>
+    <script src="./scripts.js"></script>
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>

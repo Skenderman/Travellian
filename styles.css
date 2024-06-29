@@ -18,6 +18,11 @@
   --playfair: "Playfair Display", serif;
   --rubik: "Rubik", sans-serif;
 }
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +91,9 @@ img {
 .btn:hover {
   opacity: 0.9;
 }
+.btn:active {
+  transform: translate(1px, 1px);
+}
 .btn-orange {
   background-color: var(--primary-color);
 }
@@ -111,6 +119,77 @@ img {
   align-items: center;
   z-index: 10;
 }
+.login {
+  background: url(./img/Cabo\ Da\ Roca-Portugal.jpg) no-repeat center
+    center/cover;
+  height: 100svh;
+  color: #fff;
+  position: relative;
+  color: #fff;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.login * {
+  z-index: 1;
+}
+.login-wrapper {
+  background-color: white;
+  border-radius: 15px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 30px 80px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.login-wrapper h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 5%;
+}
+.login-wrapper p {
+  color: var(--gray-color);
+  text-align: center;
+  font-size: 0.7rem;
+  margin-top: 8%;
+}
+.login-wrapper div {
+  display: flex;
+  flex-direction: column;
+}
+.login-wrapper div label {
+  color: var(--dark-color);
+  font-family: var(--rubik);
+  font-weight: 400;
+}
+.login-wrapper div input {
+  min-width: 230px;
+  padding: 10px 13px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-bottom: 6%;
+}
+.login-wrapper button {
+  width: 100%;
+}
+.unchecked {
+  background-color: transparent;
+}
+.login-wrapper div input:focus {
+  outline-style: none;
+}
 #logo-header {
   width: 30%;
   min-width: 140px;
@@ -133,10 +212,8 @@ img {
   background-position: 100% 100%; /*OR bottom right*/
   background-size: 100% 2px;
 }
-.header button:first-of-type {
-  background: transparent;
-}
-.header button:first-of-type:hover {
+
+.header button:hover {
   background-color: var(--primary-color);
 }
 .hamburger,
@@ -186,7 +263,6 @@ img {
   }
   .nav-bar-mobile.active {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     opacity: 1;
@@ -236,9 +312,14 @@ img {
     padding: 15%;
     right: 0svh;
     top: 0svh;
+    z-index: 99;
+    border-radius: 10px 0 0 10px;
+  }
+  #logo-header.active {
+    opacity: 1;
   }
   .hamburger {
-    z-index: 1;
+    z-index: 100;
   }
   #nav-mobile {
     margin: 0;
@@ -588,7 +669,7 @@ select#n-people:focus-visible {
 }
 #s4-i {
   min-width: 60%;
-  background: url(/img/Cabo\ Da\ Roca-Portugal.jpg) no-repeat center
+  background: url(./img/Cabo\ Da\ Roca-Portugal.jpg) no-repeat center
     center/cover;
   height: 100%;
   border-radius: 15px;
@@ -871,15 +952,18 @@ select#n-people:focus-visible {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 15px;
   padding: 4% 5%;
-  position: absolute;
-  left: 0;
   right: 0;
+  left: 0;
+  top: -2rem;
+  position: absolute;
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
   background-color: white;
 }
-
+.newsletter-wrapper div:nth-of-type(1) {
+  /* margin-left: 3%; */
+}
 #news-email {
   display: flex;
   flex-direction: column;
@@ -907,9 +991,34 @@ select#n-people:focus-visible {
   padding: 8%;
 }
 @media (max-width: 580px) {
-  .newsletter-wrapper h2 {
-    font-size: 2.2rem;
+  .newsletter-wrapper {
+    flex-direction: column;
+    top: 4rem;
   }
+  .newsletter-wrapper div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #news-email label {
+    display: none;
+  }
+  #news-email input {
+    margin-bottom: 0px;
+    max-width: calc(130px + 0.390625vw);
+    margin-right: 5px;
+  }
+  .newsletter-wrapper h2 {
+    font-size: calc(30px + 0.390625vw);
+  }
+  #news-button {
+    padding: 5%;
+    width: max-content;
+  }
+}
+.dark {
+  background-color: var(--dark-color);
+  padding-top: 3%;
 }
 /* footer */
 .footer {
@@ -924,6 +1033,7 @@ select#n-people:focus-visible {
 }
 #logo img {
   width: 50%;
+  min-width: 90px;
 }
 #logo p {
   color: white;
@@ -939,4 +1049,76 @@ select#n-people:focus-visible {
 .footer-links ul li {
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+@media (max-width: 580px) {
+  .footer-wrapper div:nth-of-type(2),
+  .footer-wrapper div:nth-of-type(3) {
+    display: none;
+  }
+  .footer-wrapper div:nth-of-type(4) ul li {
+    font-size: 0.7rem;
+  }
+  .footer-wrapper div:nth-of-type(5) p {
+    display: none;
+  }
+}
+.gen-under {
+  text-decoration: underline var(--primary-color);
+  text-underline-position: under;
+}
+.price-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  max-width: 400px;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--dark-color);
+  padding: 2% 5%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: padding 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.price-wrapper:hover {
+  padding: 3% 6%;
+}
+.price-wrapper h4 span {
+  color: #57dfff;
+  font-size: 3rem;
+
+  font-family: var(--rubik);
+}
+.price-wrapper h4 {
+  color: var(--gray-color);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.price-wrapper p:nth-of-type(2) {
+  text-align: center;
+  font-family: var(--playfair);
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 5% 0;
+}
+.price-wrapper ul li {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.price-wrapper button {
+  width: 70%;
+  margin-top: 15px;
+  padding: 20px 40px;
 }
